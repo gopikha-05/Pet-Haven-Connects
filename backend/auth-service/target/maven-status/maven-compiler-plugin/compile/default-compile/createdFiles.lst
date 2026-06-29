@@ -1,0 +1,13 @@
+com\pethaven\auth\AuthServiceApplication.class
+com\pethaven\auth\model\LicenseRegistry.class
+com\pethaven\auth\security\SecurityConfig.class
+com\pethaven\auth\service\DatabaseSeeder.class
+com\pethaven\auth\service\EmailService.class
+com\pethaven\auth\controller\AuthController.class
+com\pethaven\auth\repository\LicenseRegistryRepository.class
+com\pethaven\auth\repository\SystemSettingRepository.class
+com\pethaven\auth\model\SystemSetting.class
+com\pethaven\auth\security\JwtUtil.class
+com\pethaven\auth\exception\GlobalExceptionHandler.class
+com\pethaven\auth\repository\UserRepository.class
+com\pethaven\auth\model\User.class

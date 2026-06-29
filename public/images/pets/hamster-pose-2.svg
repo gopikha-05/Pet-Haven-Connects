@@ -1,0 +1,16 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="ham2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EAB308" />
+      <stop offset="100%" stop-color="#A16207" />
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" rx="16" fill="url(#ham2)" />
+  <!-- Hamster in a wheel silhouette -->
+  <circle cx="50" cy="50" r="22" stroke="#FFFFFF" stroke-width="2.5" stroke-dasharray="4,4" fill="none" opacity="0.6" />
+  <ellipse cx="50" cy="54" rx="10" ry="8" fill="#FFFFFF" opacity="0.9" />
+  <circle cx="56" cy="48" r="4.5" fill="#FFFFFF" opacity="0.9" />
+  <!-- Small ears -->
+  <circle cx="54" cy="44" r="1.5" fill="#FFFFFF" opacity="0.9" />
+  <text x="50" y="90" font-family="'Outfit', sans-serif" font-size="7" font-weight="bold" fill="#FFFFFF" text-anchor="middle" letter-spacing="1">ROLLER</text>
+</svg>

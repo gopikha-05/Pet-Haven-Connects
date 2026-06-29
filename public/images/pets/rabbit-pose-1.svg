@@ -1,0 +1,18 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="rab1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F59E0B" />
+      <stop offset="100%" stop-color="#B45309" />
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" rx="16" fill="url(#rab1)" />
+  <!-- Sitting rabbit silhouette -->
+  <path d="M40 75 L60 75 L58 62 C58 55 54 48 48 48 C42 48 38 55 38 62 Z" fill="#FFFFFF" opacity="0.9" />
+  <circle cx="45" cy="40" r="7" fill="#FFFFFF" opacity="0.9" />
+  <!-- Long Ears -->
+  <path d="M43 34 Q39 15 41 33" stroke="#FFFFFF" stroke-width="4.5" stroke-linecap="round" fill="none" opacity="0.9" />
+  <path d="M48 34 Q45 12 46 33" stroke="#FFFFFF" stroke-width="4.5" stroke-linecap="round" fill="none" opacity="0.9" />
+  <!-- Tail -->
+  <circle cx="38" cy="70" r="4" fill="#FFFFFF" opacity="0.9" />
+  <text x="50" y="90" font-family="'Outfit', sans-serif" font-size="7" font-weight="bold" fill="#FFFFFF" text-anchor="middle" letter-spacing="1">HOPPY</text>
+</svg>

@@ -1,0 +1,18 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="cat1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8B5CF6" />
+      <stop offset="100%" stop-color="#6D28D9" />
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" rx="16" fill="url(#cat1)" />
+  <!-- Sitting cat silhouette -->
+  <path d="M43 75 L57 75 L56 60 C56 52 53 45 49 45 C45 45 42 52 42 60 Z" fill="#FFFFFF" opacity="0.9" />
+  <circle cx="49" cy="38" r="8" fill="#FFFFFF" opacity="0.9" />
+  <!-- Ears -->
+  <path d="M42 34 L45 27 L48 32 Z" fill="#FFFFFF" opacity="0.9" />
+  <path d="M56 34 L53 27 L50 32 Z" fill="#FFFFFF" opacity="0.9" />
+  <!-- Tail -->
+  <path d="M56 72 Q64 70 62 50" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round" fill="none" opacity="0.9" />
+  <text x="50" y="90" font-family="'Outfit', sans-serif" font-size="7" font-weight="bold" fill="#FFFFFF" text-anchor="middle" letter-spacing="1">LUNA</text>
+</svg>

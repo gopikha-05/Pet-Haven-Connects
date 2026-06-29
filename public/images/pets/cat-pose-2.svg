@@ -1,0 +1,18 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="cat2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#EC4899" />
+      <stop offset="100%" stop-color="#BE185D" />
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" rx="16" fill="url(#cat2)" />
+  <!-- Playing cat silhouette -->
+  <path d="M30 65 L45 50 Q55 45 65 52 L70 42 Q60 38 48 44 L32 60 Z" fill="#FFFFFF" opacity="0.9" />
+  <circle cx="72" cy="36" r="7" fill="#FFFFFF" opacity="0.9" />
+  <!-- Ears -->
+  <path d="M67 32 L69 25 L72 30 Z" fill="#FFFFFF" opacity="0.9" />
+  <path d="M78 32 L76 25 L73 30 Z" fill="#FFFFFF" opacity="0.9" />
+  <!-- Tail -->
+  <path d="M30 65 Q20 62 25 45" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.9" />
+  <text x="50" y="90" font-family="'Outfit', sans-serif" font-size="7" font-weight="bold" fill="#FFFFFF" text-anchor="middle" letter-spacing="1">PLAYFUL</text>
+</svg>

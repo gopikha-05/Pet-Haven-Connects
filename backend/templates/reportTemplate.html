@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Haven Connect Report</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+            line-height: 1.6;
+            background: #fff;
+        }
+
+        .container {
+            max-width: 210mm;
+            margin: 0 auto;
+            padding: 20mm;
+        }
+
+        /* Header */
+        .header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 3px solid #0d9488;
+        }
+
+        .logo {
+            width: 60px;
+            height: 60px;
+            margin-right: 20px;
+            flex-shrink: 0;
+        }
+
+        .header-text h1 {
+            font-size: 28px;
+            color: #0d9488;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .header-text h2 {
+            font-size: 14px;
+            color: #666;
+            font-weight: normal;
+        }
+
+        /* Report Title */
+        .report-title {
+            text-align: center;
+            font-size: 24px;
+            color: #1f2937;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+
+        /* Metadata */
+        .metadata {
+            background: #f9fafb;
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+
+        .metadata-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        .metadata-row:last-child {
+            margin-bottom: 0;
+        }
+
+        .metadata-label {
+            font-weight: 600;
+            color: #666;
+            font-size: 12px;
+        }
+
+        .metadata-value {
+            color: #333;
+            font-size: 12px;
+        }
+
+        /* Executive Summary */
+        .section-title {
+            font-size: 18px;
+            color: #1f2937;
+            font-weight: bold;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e5e7eb;
+        }
+
+        .summary-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .summary-card {
+            background: #f9fafb;
+            border: 1px solid #e5e7eb;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .summary-card .label {
+            font-size: 11px;
+            color: #666;
+            margin-bottom: 8px;
+        }
+
+        .summary-card .value {
+            font-size: 20px;
+            color: #0d9488;
+            font-weight: bold;
+        }
+
+        /* Table */
+        .table-container {
+            margin-bottom: 30px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 11px;
+        }
+
+        thead {
+            background: #0d9488;
+            color: white;
+        }
+
+        th {
+            padding: 12px 10px;
+            text-align: left;
+            font-weight: 600;
+            border: 1px solid #0c847a;
+            word-wrap: break-word;
+        }
+
+        td {
+            padding: 10px;
+            border: 1px solid #e5e7eb;
+            word-wrap: break-word;
+            max-width: 200px;
+        }
+
+        tbody tr:nth-child(even) {
+            background: #f9fafb;
+        }
+
+        tbody tr:hover {
+            background: #f3f4f6;
+        }
+
+        /* Footer */
+        .footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #e5e7eb;
+            text-align: center;
+            font-size: 10px;
+            color: #999;
+        }
+
+        .footer p {
+            margin-bottom: 5px;
+        }
+
+        /* Page break */
+        .page-break {
+            page-break-after: always;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <svg class="logo" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="50" cy="50" r="48" fill="#0d9488"/>
+                <ellipse cx="35" cy="35" rx="12" ry="16" fill="#fff" opacity="0.9"/>
+                <ellipse cx="65" cy="35" rx="12" ry="16" fill="#fff" opacity="0.9"/>
+                <ellipse cx="50" cy="58" rx="18" ry="14" fill="#fff" opacity="0.9"/>
+                <circle cx="50" cy="72" r="8" fill="#f97316"/>
+            </svg>
+            <div class="header-text">
+                <h1>Pet Haven Connect</h1>
+                <h2>Animal Adoption Management System</h2>
+            </div>
+        </div>
+
+        <!-- Report Title -->
+        <div class="report-title">{{REPORT_TITLE}}</div>
+
+        <!-- Metadata -->
+        <div class="metadata">
+            <div class="metadata-row">
+                <span class="metadata-label">Generated:</span>
+                <span class="metadata-value">{{GENERATED_DATE}}</span>
+                <span class="metadata-label">Generated By:</span>
+                <span class="metadata-value">{{GENERATED_BY}}</span>
+            </div>
+            <div class="metadata-row">
+                <span class="metadata-label">Date Range:</span>
+                <span class="metadata-value">{{DATE_RANGE}}</span>
+                <span class="metadata-label">Report ID:</span>
+                <span class="metadata-value">{{REPORT_ID}}</span>
+            </div>
+        </div>
+
+        <!-- Executive Summary -->
+        <h3 class="section-title">Executive Summary</h3>
+        <div class="summary-grid">
+            {{SUMMARY_CARDS}}
+        </div>
+
+        <!-- Detailed Records Table -->
+        <h3 class="section-title">Detailed Records</h3>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>{{TABLE_HEADERS}}</tr>
+                </thead>
+                <tbody>
+                    {{TABLE_ROWS}}
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p>Pet Haven Connect © 2026</p>
+            <p>Generated automatically by Pet Haven Connect Reporting System</p>
+            <p>Page {{PAGE_NUMBER}} of {{TOTAL_PAGES}}</p>
+        </div>
+    </div>
+</body>
+</html>

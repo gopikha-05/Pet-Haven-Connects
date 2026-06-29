@@ -1,0 +1,118 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'DM Sans', system-ui, sans-serif;
+  --font-display: 'Outfit', system-ui, sans-serif;
+  
+  /* Primary Teal Colors (existing) */
+  --color-primary-50: #f0fdf9;
+  --color-primary-100: #ccfbf1;
+  --color-primary-200: #99f6e4;
+  --color-primary-300: #5eead4;
+  --color-primary-400: #2dd4bf;
+  --color-primary-500: #14b8a6;
+  --color-primary-600: #0d9488;
+  --color-primary-700: #0f766e;
+  --color-primary-800: #115e59;
+  --color-primary-900: #134e4a;
+  
+  /* New Color Palette */
+  --color-cream-50: #faf9f7;
+  --color-cream-100: #f5f3ef;
+  --color-cream-200: #ebe8e2;
+  --color-cream-300: #e0dcd4;
+  
+  --color-beige-50: #f5f0e8;
+  --color-beige-100: #ebe4d8;
+  --color-beige-200: #e0d9c8;
+  --color-beige-300: #d5ceb8;
+  
+  --color-coral-50: #fff1ed;
+  --color-coral-100: #ffe4db;
+  --color-coral-200: #ffd0c0;
+  --color-coral-300: #ffbba5;
+  --color-coral-400: #ff9f85;
+  --color-coral-500: #f97316;
+  --color-coral-600: #ea580c;
+  
+  --color-peach-50: #fff5f0;
+  --color-peach-100: #ffe8dd;
+  --color-peach-200: #ffd6c4;
+  --color-peach-300: #ffc4ab;
+  
+  /* Existing Colors */
+  --color-accent-400: #fb923c;
+  --color-accent-500: #f97316;
+  --color-accent-600: #ea580c;
+  --color-surface: #faf9f7;
+  --color-card: #ffffff;
+  --color-muted: #64748b;
+  --color-border: #e2e8f0;
+  --color-danger: #ef4444;
+  --color-success: #22c55e;
+  --color-warning: #eab308;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-cream-50 text-slate-800 font-sans antialiased;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+  }
+}
+
+@layer utilities {
+  .gradient-hero {
+    background: linear-gradient(135deg, #0d9488 0%, #14b8a6 40%, #5eead4 100%);
+  }
+  .gradient-card {
+    background: linear-gradient(145deg, #ffffff 0%, #f0fdf9 100%);
+  }
+  .gradient-warm {
+    background: linear-gradient(135deg, #faf9f7 0%, #f5f0e8 100%);
+  }
+  .gradient-teal-subtle {
+    background: linear-gradient(135deg, #f0fdf9 0%, #ccfbf1 100%);
+  }
+  .glass {
+    @apply bg-white/80 backdrop-blur-md border border-white/20;
+  }
+  .glass-warm {
+    @apply bg-cream-50/80 backdrop-blur-md border border-cream-200/20;
+  }
+  .glass-teal {
+    @apply bg-primary-50/80 backdrop-blur-md border border-primary-200/20;
+  }
+  .scrollbar-thin {
+    scrollbar-width: thin;
+    scrollbar-color: #cbd5e1 transparent;
+  }
+  
+  /* Paw Print Background Pattern & Subtle Page Gradients */
+  .bg-paw-pattern {
+    background-image: 
+      radial-gradient(at 0% 0%, rgba(20, 184, 166, 0.035) 0px, transparent 50%),
+      radial-gradient(at 50% 0%, rgba(20, 184, 166, 0.015) 0px, transparent 50%),
+      radial-gradient(at 100% 0%, rgba(251, 146, 60, 0.01) 0px, transparent 50%),
+      url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%230d9488' fill-opacity='0.015'%3E%3Cpath d='M30 20c-2.2 0-4 1.8-4 4s1.8 4 4 4 4-1.8 4-4-1.8-4-4-4zm-8 8c-1.7 0-3 1.3-3 3s1.3 3 3 3 3-1.3 3-3-1.3-3-3-3zm16 0c-1.7 0-3 1.3-3 3s1.3 3 3 3 3-1.3 3-3-1.3-3-3-3zm-12 8c-1.7 0-3 1.3-3 3s1.3 3 3 3 3-1.3 3-3-1.3-3-3-3zm8 0c-1.7 0-3 1.3-3 3s1.3 3 3 3 3-1.3 3-3-1.3-3-3-3z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-repeat: repeat;
+    background-color: #f5f3ef; /* Slightly darker warm off-white */
+  }
+  
+  /* Soft Modern Brand-Aware Shadows */
+  .shadow-card {
+    box-shadow: 0 4px 20px -2px rgba(15, 118, 110, 0.04), 0 2px 6px -1px rgba(0, 0, 0, 0.015);
+  }
+  .shadow-card-hover {
+    box-shadow: 0 10px 30px -4px rgba(15, 118, 110, 0.07), 0 4px 12px -2px rgba(0, 0, 0, 0.025);
+  }
+  
+  /* Smooth Transitions */
+  .transition-smooth {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}

@@ -1,0 +1,17 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="cat3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10B981" />
+      <stop offset="100%" stop-color="#047857" />
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" rx="16" fill="url(#cat3)" />
+  <!-- Sleeping cat silhouette (curled up) -->
+  <circle cx="50" cy="52" r="18" fill="#FFFFFF" opacity="0.9" />
+  <circle cx="54" cy="42" r="6" fill="#FFFFFF" opacity="0.9" />
+  <!-- Ears -->
+  <path d="M49 38 L51 32 L53 36 Z" fill="#FFFFFF" opacity="0.9" />
+  <path d="M59 38 L57 32 L55 36 Z" fill="#FFFFFF" opacity="0.9" />
+  <path d="M50 70 Q38 68 38 52 Q38 38 48 35" fill="none" stroke="#FFFFFF" stroke-width="3" opacity="0.9" />
+  <text x="50" y="90" font-family="'Outfit', sans-serif" font-size="7" font-weight="bold" fill="#FFFFFF" text-anchor="middle" letter-spacing="1">SLEEPING</text>
+</svg>
